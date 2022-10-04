@@ -299,12 +299,12 @@
 
  .buttom-nav{
 
-  font-size: .65em;
+  font-size: .7em;
   z-index: 2;
   display: none;
   position: fixed;
   width: 100%;
-  height:5em;
+  height:5.1em;
   justify-content: space-around;
   align-items: center;
   background-color: white;
@@ -329,7 +329,7 @@
   color:#1d1d1d;
  }
  .nav-item-container i{
-  font-size:1.8em;
+  font-size:1.9em;
  }
 
 
