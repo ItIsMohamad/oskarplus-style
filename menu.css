@@ -300,7 +300,7 @@
  .buttom-nav{
 
   font-size: .65em;
-  z-index: 20;
+  z-index: 2;
   display: none;
   position: fixed;
   width: 100%;
