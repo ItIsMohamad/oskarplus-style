@@ -299,17 +299,17 @@
 
  .buttom-nav{
 
-  font-size: .7em;
+  font-size: .65em;
   z-index: 20;
   display: none;
   position: fixed;
   width: 100%;
-  height:5.5em;
+  height:5em;
   justify-content: space-around;
   align-items: center;
   background-color: white;
   bottom: 0;
-  color:var(--font-color);
+  color:#7d7d7d;
  }
 
 
@@ -321,9 +321,16 @@
  }
 
 
- .nav-item-container i{
-  font-size:2em;
+ .nav-item-container.active{
+  color: var(--font-color);
  }
+ .nav-item-container i{
+  font-size:1.8em;
+ }
+
+
+ 
+ 
 
 
  @media all and (max-width:600px){
