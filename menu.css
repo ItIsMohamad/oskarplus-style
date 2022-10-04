@@ -1,0 +1,333 @@
+/* desktiop nav */
+
+
+.nav-home-desktop {
+    background-color: white;
+    box-shadow: 0px 4px 4px #ededed;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+
+
+
+  .nav-home-desktop{
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+  
+   
+   
+  }
+
+
+
+  .nav-desktop {
+    position: fixed;
+    background: #ffffff;
+    width: 90vw;
+    top: 0;
+    right: 0;
+    left: 100%;
+    bottom: 0;
+    transform: translateX(0);
+    color: orange;
+    transition: transform 400ms;
+    z-index: 10;
+    display: flex;
+  }
+
+
+
+
+
+  .nav-list-desktop {
+    display: flex;
+    
+    flex-direction: column;
+    list-style: none;
+   margin: 0.5em 0;
+  }
+
+
+
+
+
+
+
+
+ 
+  .nav-list-desktop li a{
+    text-decoration: none;
+    color: var(--font-color);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+   }
+
+
+
+
+   .nav-list-desktop li a i{
+    width: 1.5em;
+    text-align:center;
+    font-size: 1rem;
+  
+   
+  }
+  .nav-list-desktop li a .fa-angle-left{
+    display: none;
+      
+  
+    
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  
+@media all and (min-width: 800px) {
+    .header {
+      box-shadow: none;
+    }
+  
+    .left-icons > * {
+      font-size: 1.1rem;
+      transform: scale(1);
+      cursor: pointer;
+      transition: transform 100ms;
+    }
+  
+    .left-icons > *:hover {
+      color: rgb(252, 57, 7);
+      transform: scale(1.2);
+    }
+  
+    .gird-main-desktop {
+      display: grid;
+      grid-template-columns: 200px minmax(auto, 900px) 200px;
+      column-gap: 2em;
+  
+      grid-template-areas: "p s l";
+      /* justify-items: center; */
+  
+      justify-content: space-between;
+    }
+  
+    .nav-home-desktop {
+      background-color: white;
+      box-shadow: 0px 4px 4px #ededed;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    .nav-desktop {
+      background-color: white;
+      position: initial;
+   
+  
+      color: var(--font-color);
+      grid-column: 2;
+  
+      display: flex;
+      width: 100%;
+      min-width: 320px;
+    }
+  
+    .nav-list-desktop {
+      font-size: 0.8rem;
+  
+      width: 100%;
+      gap: 0.4em;
+  
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+    }
+  
+    .nav-list-desktop > li {
+      padding-left: 1em;
+      transform: translateY(0);
+      transition: transform 250ms;
+    }
+    .nav-list-desktop > li > a:link,
+    .nav-list-desktop > li > a:visited {
+      text-decoration: none;
+      color: #404040;
+    }
+  
+    .nav-list-desktop > li > a:hover {
+      text-decoration: none;
+  
+      color: var(--main-orange);
+    }
+  
+    .nav-list-desktop > li:hover {
+      transform: translateY(-3px);
+    }
+  
+     .nav-list-desktop > li > a > .fa-solid {
+      text-align: end;
+    } 
+  
+    .left-icons {
+      display: flex;
+      gap: 2em;
+      align-items: center;
+      justify-content: flex-start;
+      /* grid-column: 1/2;
+      grid-row: 1; */
+      grid-area: p;
+      justify-self: start;
+  
+      min-width: max-content;
+    }
+  
+    .search-bar {
+      justify-self: end;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  
+      border: 2px solid #ededed;
+  
+      border-radius: 4px;
+    }
+  
+    .choose-shops:focus {
+      outline: none;
+    }
+  }
+  
+
+
+  @media all and (max-width:800px){
+
+    nav-home-desktop{
+        display: none;
+    }
+
+  }
+/* end desktop nav */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile nav*/
+
+
+
+
+
+.to-pull{
+  display: none;
+}
+
+
+.nav-pull{
+  transform:translateX(100%);
+  transition: all 500ms;
+  transition-timing-function: ease-out;
+  z-index: 2;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* button nav */
+
+ .buttom-nav{
+
+  font-size: .7em;
+  z-index: 20;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 7vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  bottom: 0;
+  color:var(--font-color);
+ }
+
+
+ .nav-item-container{
+  display: flex;
+  gap: .4em;
+  flex-direction: column;
+  align-items: center;
+ }
+
+
+ .nav-item-container i{
+  font-size:2em;
+ }
+
+
+ @media all and (max-width:600px){
+ .buttom-nav{
+  display: flex;
+ }
+ }
